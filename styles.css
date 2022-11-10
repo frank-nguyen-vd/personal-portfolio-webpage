@@ -1,0 +1,46 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--main-red);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: var(--main-white);
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.nav-list a:hover {
+  background-color: var(--main-blue);
+}
