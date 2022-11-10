@@ -3,7 +3,10 @@
   --main-red: #be3144;
   --main-blue: #45567d;
   --main-gray: #303841;
+  --main-black: #1f1f1f;
 }
+
+/* Common */
 
 * {
   margin: 0;
@@ -13,8 +16,22 @@
 
 html {
   font-size: 62.5%;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
 }
 
 /* Navbar */
@@ -43,4 +60,31 @@ html {
 
 .nav-list a:hover {
   background-color: var(--main-blue);
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-image: linear-gradient(
+    60deg,
+    var(--main-gray) 0%,
+    var(--main-black) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section h1 {
+  color: var(--main-white);
+  font-size: 5rem;
+}
+
+.welcome-section p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-red);
 }
